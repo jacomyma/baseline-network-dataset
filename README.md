@@ -12,9 +12,9 @@ This dataset will have at least three sections:
 Section A aims to allow testing whether a given library deals with different kinds of graphs appropriately. These networks will be quite small for convenience. It notably aims to help building consensus on how to compute graph metrics (betweenness centrality...) in different situations. Indeed, the reference literature is sometimes ambiguous about how to deal with things like self-loops, mixtures of directed and undirected edges, etc. Section B aims to help assessing how algorithms behave depending on the topology of a network. Indeed, some algorithms are efficient with a lattice but not with a scale-free network, or vice versa. Section C aims to allow benchmarking performance and focuses on networks of different sizes. The optional section D could contain staple networks such as C. Elegans, Karate Club etc.
 
 ## Similar works
-[Netzschleuder: Network catalogue, repository and centrifuge.](https://networks.skewed.de/)
-[SNAP: Stanford Large Network Dataset Collection](https://snap.stanford.edu/data/)
-[OGB: Open Graph Benchmark](https://ogb.stanford.edu/)
+* [Netzschleuder: Network catalogue, repository and centrifuge.](https://networks.skewed.de/)
+* [SNAP: Stanford Large Network Dataset Collection](https://snap.stanford.edu/data/)
+* [OGB: Open Graph Benchmark](https://ogb.stanford.edu/)
 
 ## Roadmap
 1. Draft specifications for section A
@@ -24,7 +24,7 @@ Section A aims to allow testing whether a given library deals with different kin
 
 # Section A: Types of networks
 ## Properties covered
-* Type: directed|undirected|mixed
+* [Type](https://en.wikipedia.org/wiki/Directed_graph): ```directed|undirected|mixed```
 * Self-loops allowed: true|false
 * Parallel edges allowed: true|false
 * Edges: true|false
