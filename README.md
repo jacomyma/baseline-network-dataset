@@ -38,7 +38,7 @@ Section A aims to allow testing whether a given library deals with different kin
   * Node attribute type ```boolean|integer|float|string```
 * Edge attributes ```true|false``` (aside from weight)
   * Edge attribute type ```boolean|integer|float|string```
-* [Dynamic] ```true|false``` (time dimension)
+* Dynamic ```true|false``` (time dimension)
   * Nodes have timelines ```true|false```
   * Edges have timelines ```true|false```
   * Node or edge attributes change over time ```true|false```
