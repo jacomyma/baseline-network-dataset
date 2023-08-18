@@ -24,19 +24,22 @@ Section A aims to allow testing whether a given library deals with different kin
 
 # Section A: Types of networks
 ## Properties covered
-* [Type](https://en.wikipedia.org/wiki/Directed_graph): ```directed|undirected|mixed```
-* Self-loops allowed: true|false
-* Parallel edges allowed: true|false
-* Edges: true|false
-* Edge weights: true|false
-  * Edge weights are integer: true|false
-  * Edge weigths are positive of null: true|false
-  * Edge weigths do not exceed 1: true|false
-* Dynamic: true|false (time dimension)
-* Edge attributes: true|false (aside from weight)
-  * Edge attribute type: boolean|integer|float|string|other
-* Node attributes: true|false
-  * Node attribute type: boolean|integer|float|string|other
-* Connected: true|false (one or more connected components)
-* Cyclic: true|false (false = acyclic graph; trees are typically connected acyclic undirected graphs)
-* Modes: monopartite|bipartite|npartite Monopartite (resp. bipartite) graphs are sometimes called one-mode (resp. two modes). One can have n-partite networks with n>2.
+* [Type](https://en.wikipedia.org/wiki/Directed_graph) ```directed|undirected|mixed```
+* Edges ```true|false``` (a network may have no edges and it may break some code)
+* [Connected](https://en.wikipedia.org/wiki/Component_(graph_theory)) ```true|false``` (one or more connected components; interferes with some algorithms)
+* [Cyclic](https://en.wikipedia.org/wiki/Cycle_(graph_theory)) ```true|false``` (false = acyclic graph; trees are typically connected acyclic undirected graphs)
+* [Self-loops](https://en.wikipedia.org/wiki/Loop_(graph_theory)) allowed ```true|false```
+* [Parallel edges](https://en.wikipedia.org/wiki/Multiple_edges) allowed ```true|false```
+* [Edge weights](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)#Weighted_graph) ```true|false```
+  * Edge weights are integer ```true|false```
+  * Edge weights are positive or null ```true|false```
+  * Edge weights do not exceed 1 ```true|false```
+* Node attributes ```true|false```
+  * Node attribute type ```boolean|integer|float|string```
+* Edge attributes ```true|false``` (aside from weight)
+  * Edge attribute type ```boolean|integer|float|string```
+* [Dynamic] ```true|false``` (time dimension)
+  * Nodes have timelines ```true|false```
+  * Edges have timelines ```true|false```
+  * Node or edge attributes change over time ```true|false```
+* [Modes](https://en.wikipedia.org/wiki/Bipartite_graph) ```monopartite|bipartite``` Monopartite (resp. bipartite) graphs are sometimes called one-mode (resp. two modes). One can have n-partite networks with n>2, but we do not cover it.
